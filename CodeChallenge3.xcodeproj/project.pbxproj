@@ -16,6 +16,8 @@
 		938C360E19F02F62000F4F50 /* StationsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938C360D19F02F62000F4F50 /* StationsListViewController.m */; };
 		938C361119F02F6E000F4F50 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938C361019F02F6E000F4F50 /* MapViewController.m */; };
 		938C361319F03387000F4F50 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 938C361219F03387000F4F50 /* MapKit.framework */; };
+		D5B805FA1B18DE7200A90946 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B805F91B18DE7200A90946 /* CoreLocation.framework */; };
+		D5B805FD1B18DF8E00A90946 /* divyBikeStation.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B805FC1B18DF8E00A90946 /* divyBikeStation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 		938C360F19F02F6E000F4F50 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../MapViewController.h; sourceTree = "<group>"; };
 		938C361019F02F6E000F4F50 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../MapViewController.m; sourceTree = "<group>"; };
 		938C361219F03387000F4F50 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D5B805F91B18DE7200A90946 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D5B805FB1B18DF8E00A90946 /* divyBikeStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = divyBikeStation.h; sourceTree = "<group>"; };
+		D5B805FC1B18DF8E00A90946 /* divyBikeStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = divyBikeStation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5B805FA1B18DE7200A90946 /* CoreLocation.framework in Frameworks */,
 				938C361319F03387000F4F50 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +75,7 @@
 		938C35DA19F02E16000F4F50 = {
 			isa = PBXGroup;
 			children = (
+				D5B805F91B18DE7200A90946 /* CoreLocation.framework */,
 				938C361219F03387000F4F50 /* MapKit.framework */,
 				938C35E519F02E16000F4F50 /* CodeChallenge3 */,
 				938C35FF19F02E16000F4F50 /* CodeChallenge3Tests */,
@@ -88,12 +95,13 @@
 		938C35E519F02E16000F4F50 /* CodeChallenge3 */ = {
 			isa = PBXGroup;
 			children = (
+				938C35EA19F02E16000F4F50 /* AppDelegate.h */,
 				938C35EB19F02E16000F4F50 /* AppDelegate.m */,
 				938C360C19F02F62000F4F50 /* StationsListViewController.h */,
 				938C360D19F02F62000F4F50 /* StationsListViewController.m */,
 				938C360F19F02F6E000F4F50 /* MapViewController.h */,
 				938C361019F02F6E000F4F50 /* MapViewController.m */,
-				938C35EA19F02E16000F4F50 /* AppDelegate.h */,
+				D5B805FE1B18EB2B00A90946 /* divyBIkeStation */,
 				938C35F019F02E16000F4F50 /* Main.storyboard */,
 				938C35F319F02E16000F4F50 /* Images.xcassets */,
 				938C35F519F02E16000F4F50 /* LaunchScreen.xib */,
@@ -126,6 +134,15 @@
 				938C360119F02E16000F4F50 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5B805FE1B18EB2B00A90946 /* divyBIkeStation */ = {
+			isa = PBXGroup;
+			children = (
+				D5B805FB1B18DF8E00A90946 /* divyBikeStation.h */,
+				D5B805FC1B18DF8E00A90946 /* divyBikeStation.m */,
+			);
+			name = divyBIkeStation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +248,7 @@
 				938C360E19F02F62000F4F50 /* StationsListViewController.m in Sources */,
 				938C35EC19F02E16000F4F50 /* AppDelegate.m in Sources */,
 				938C35E919F02E16000F4F50 /* main.m in Sources */,
+				D5B805FD1B18DF8E00A90946 /* divyBikeStation.m in Sources */,
 				938C361119F02F6E000F4F50 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +442,7 @@
 				938C360819F02E16000F4F50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		938C360919F02E16000F4F50 /* Build configuration list for PBXNativeTarget "CodeChallenge3Tests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +451,7 @@
 				938C360B19F02E16000F4F50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

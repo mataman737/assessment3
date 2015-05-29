@@ -10,4 +10,7 @@
 
 @interface StationsListViewController : UIViewController
 
+@property NSMutableArray *divvyBikesArray;
+
+
 @end

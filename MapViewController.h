@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "divyBikeStation.h"
 
 @interface MapViewController : UIViewController
+
+@property divyBikeStation *divyBikeStationToBePassed;
 
 @end
